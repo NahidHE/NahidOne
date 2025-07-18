@@ -24,6 +24,20 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px); /* add blur effect */
+  -webkit-backdrop-filter: blur(4px); /* Safari support */
+  border-radius: 20px; /* optional: rounded corners */
 }
 
 .menu {
@@ -42,4 +56,31 @@ p {
 
 .util p {
   text-align: right;
+}
+
+.menu .nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu .nav button {
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: none;
+  color: aliceblue;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menu .icon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  cursor: pointer;
 }
